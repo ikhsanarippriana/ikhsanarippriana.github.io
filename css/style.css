@@ -224,7 +224,11 @@ nav{
     }
 
     .jumbotron {
-        background-position: right;
+        background-size: cover;
+    }
+
+    .card {
+        margin-bottom: 100px !important;
     }
 
 }
