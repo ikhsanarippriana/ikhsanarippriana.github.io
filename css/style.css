@@ -14,20 +14,15 @@ nav{
 }
 
 .navbar .navbar-brand{
-    color: salmon;
+    color: rgb(255, 102, 0);
 }
 
 .navbar .navbar-brand:hover {
-    color: salmon;
-}
-
-.navbar .navbar-brand:before{
-    content: "</";
     color: white;
 }
 
-.navbar .navbar-brand:after{
-    content: ">";
+.navbar .navbar-brand:before{
+    content: "~ ";
     color: white;
 }
 
@@ -37,15 +32,16 @@ nav{
 }
 
 .navbar .navbar-toggler:hover {
-    color: salmon;
+    color: white;
 }
 
 .navbar-nav .nav-link{
+    color: white;
     margin-left: 40px;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: salmon;
+    color: rgb(255, 102, 0);
 }
 
 .btn-custom{
@@ -62,8 +58,8 @@ nav{
     background-color: gainsboro;
 }
 
-.bg-salmon{
-    background-color: salmon;
+.bg-orange{
+    background-color: rgb(255, 102, 0);
 }
 
 .jumbotron{
@@ -72,22 +68,19 @@ nav{
     background-image: url(../img/jumbotron.JPG);
     background-position: center;
     background-size: cover;
-    max-height: 780px;
-    height: 780px;
+    filter: opacity(.9);
+    max-height: 750px;
+    height: 750px;
 }
 
 .jumbotron .container {
+    margin-top: 140px;
     transform: translateY(100%);
 }
 
 .jumbotron h2 span{
-    color: salmon;
+    color: rgb(255, 102, 0);
 }
-
-/* .thumb-header{
-    width: 50%;
-    height: 50%;
-} */
 
 .scrolling-active {
     background-color: white;
@@ -99,11 +92,12 @@ nav{
     color: #19233D;
 }
 
+.text-orange,
 .scrolling-active .navbar-brand:before,
 .scrolling-active .navbar-brand:after,
 .scrolling-active .navbar-toggler,
 .scrolling-active .navbar-nav .nav-link{
-    color: salmon !important;
+    color: rgb(255, 102, 0) !important;
 }
 
 #main-content {
@@ -117,11 +111,11 @@ nav{
 
 #main-content h3 {
     font-weight: bold;
-    color: salmon;
+    color: rgb(255, 102, 0);
 }
 
 .main-1, .main-2,
-.main-3 {
+.main-3, .main-4 {
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -203,7 +197,7 @@ nav{
     font-size: 20px;
     height: 50px;
     width: 50px;
-    background-color: salmon;
+    background-color: rgb(255, 102, 0);
     text-align: center;
     display: none;
     transition: 0.5s;
@@ -226,15 +220,23 @@ nav{
     }
 
     .jumbotron .container {
-        margin-top: 50px;
+        margin-top: 100px !important;
+    }
+
+    .jumbotron {
+        background-position: right;
     }
 
 }
 
 @media (max-width: 768px) {
     
-    nav{
+    nav {
         line-height: 40px;
+    }
+
+    .navbar-nav {
+        background-color: white !important;
     }
 
     .jumbotron {
