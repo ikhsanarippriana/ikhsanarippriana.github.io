@@ -118,6 +118,10 @@ nav{
     color: rgb(255, 102, 0);
 }
 
+.person {
+    border-radius: 50%;
+}
+
 .main-1, .main-2,
 .main-3, .main-4 {
     margin-top: 100px;
