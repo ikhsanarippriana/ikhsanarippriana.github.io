@@ -75,7 +75,7 @@ nav{
 
 .jumbotron .container {
     margin-top: 140px;
-    transform: translateY(100%);
+    transform: translateY(100%) !important;
 }
 
 .jumbotron h2 span{
